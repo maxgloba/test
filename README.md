@@ -1,6 +1,6 @@
-## Programming Exercises
+# Programming Exercises
 
-# Fibonacci
+## Fibonacci
 Fibonacci numbers exists when each is the sum of the previous 2 numbers:
 Fn = Fn−1 + Fn−2, where F0 = 0, F1 = 1 and F2 = 1.
 the first 12 terms are: 
@@ -22,7 +22,7 @@ What index yields the 1st term to contain a 1,000 digit sum?
 # npm run fib
 
 
-# Counting summations
+## Counting summations
 There are 6 ways to reach a sum of 5:
 1 + 1 + 1 + 1 + 1
 2 + 1 + 1 + 1
