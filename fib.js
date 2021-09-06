@@ -1,7 +1,13 @@
 const
-  a = (1 + 5 ** 0.5) / 2,
-  c = 5 ** 0.5,
-  fib = n => a ** n / c
+  bigdecimal = require("bigdecimal"),
+  fib = n => {
+    let prev = 0n, next = 1n;
+    for(let i = 0; i < n; i++){
+      next = prev + next;
+      prev = next - prev;
+    }
+    return prev;
+  }
 
 let
   i = 1,
@@ -12,8 +18,9 @@ while(flag){
     n = i++,
     num = fib(n),
     numStr = num.toString()
-  if(numStr.length === 1000 || n === 4782){
-    console.log(`F${n} = ${num} - ${numStr.length}`);
+  if(numStr.length === 1000){
+    console.log(`The index with 1,000 digit sum is: ${n}`);
+    console.log(`F${n} = ${num}`);
     flag = false;
   }
 }
