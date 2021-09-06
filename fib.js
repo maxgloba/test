@@ -1,5 +1,6 @@
+console.log('What index yields the 1st term to contain a 1,000 digit sum?');
+
 const
-  bigdecimal = require("bigdecimal"),
   fib = n => {
     let prev = 0n, next = 1n;
     for(let i = 0; i < n; i++){
@@ -19,8 +20,7 @@ while(flag){
     num = fib(n),
     numStr = num.toString()
   if(numStr.length === 1000){
-    console.log(`The index with 1,000 digit sum is: ${n}`);
-    console.log(`F${n} = ${num}`);
+    console.log(`Answer: ${n}`);
     flag = false;
   }
 }
